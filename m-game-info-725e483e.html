@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG游戏 · 信息索引</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #faf7f2;
+      font-family: "Georgia", "Noto Serif SC", "Source Han Serif SC", serif;
+      color: #2e2b28;
+      line-height: 1.7;
+      padding: 0 20px;
+    }
+    .page {
+      max-width: 860px;
+      margin: 2rem auto 3rem;
+    }
+
+    /* hero */
+    .hero {
+      background: #f1ebe2;
+      border-radius: 24px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 2.8rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+      border: 1px solid #e3dacd;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: #3b3530;
+      margin-bottom: 0.8rem;
+    }
+    .hero .sub {
+      font-size: 1rem;
+      color: #6a6259;
+      margin-bottom: 0.2rem;
+      border-left: 3px solid #b8aa98;
+      padding-left: 1rem;
+    }
+    .hero .tagline {
+      font-size: 1.05rem;
+      color: #5a5147;
+      margin-top: 0.8rem;
+    }
+
+    /* 陈述块通用 */
+    section { margin-bottom: 2.8rem; }
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 450;
+      border-bottom: 1px solid #dcd3c7;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.2rem;
+      color: #3f3832;
+      letter-spacing: 0.01em;
+    }
+    p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    a {
+      color: #6f5e4c;
+      text-decoration: underline;
+      text-underline-offset: 0.12em;
+      text-decoration-thickness: 0.5px;
+      transition: color 0.15s;
+    }
+    a:hover { color: #a58466; }
+
+    /* 特点卡片网格 */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+    .feature-item {
+      background: #f6f0e8;
+      padding: 1.4rem 1.2rem;
+      border-radius: 14px;
+      border: 1px solid #e5dbce;
+    }
+    .feature-item strong {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: #4d443c;
+    }
+    .feature-item span {
+      font-size: 0.95rem;
+      color: #5d544b;
+    }
+
+    /* 引用 / 提示框 */
+    .inset-box {
+      background: #f3ede5;
+      border-left: 6px solid #b8aa98;
+      padding: 1.2rem 1.6rem;
+      margin: 1.6rem 0;
+      border-radius: 0 12px 12px 0;
+      font-size: 0.98rem;
+    }
+    .inset-box p { margin-bottom: 0.3rem; }
+    .inset-box p:last-child { margin-bottom: 0; }
+
+    /* FAQ 摘要 */
+    .faq-block {
+      background: #f5f1ea;
+      border-radius: 16px;
+      padding: 0.8rem 1.6rem 1.2rem;
+      border: 1px solid #e0d5c7;
+    }
+    .faq-item {
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #ddd2c2;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      font-weight: 500;
+      color: #4b423a;
+      margin-bottom: 0.2rem;
+    }
+    .faq-a {
+      font-size: 0.95rem;
+      color: #5e554b;
+    }
+
+    /* 底部 */
+    .footer-note {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dcd3c7;
+      font-size: 0.88rem;
+      color: #776e63;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 600px) {
+      body { padding: 0 12px; }
+      .hero { padding: 2rem 1.2rem; }
+      .hero h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.3rem; }
+      .features-grid { grid-template-columns: 1fr; }
+      .faq-block { padding: 0.6rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- hero -->
+    <header class="hero">
+      <h1>PG游戏 · 稳定的信息页面</h1>
+      <div class="sub">围绕平台特性与使用场景的说明</div>
+      <div class="tagline">一份整理好的索引，帮助熟悉 <a href="https://m-game-pgsoft.com">PG游戏</a> 的界面与常见问题。</div>
+    </header>
+
+    <!-- 优势区：简洁稳定的入口环境 -->
+    <section>
+      <h2>为什么需要一个稳定的说明页</h2>
+      <p>在日常使用中，很多用户习惯通过收藏夹或搜索引擎直接进入服务。但不同时期的页面结构、入口位置偶尔会调整。这个页面把与 <a href="https://m-game-pgsoft.com">PG游戏</a> 相关的核心信息整理在一起——不依赖第三方总结，也不使用重定向跳转，只作为一份客观的参考。</p>
+      <p>页面内容基于平台公开信息与常见用户反馈编写，不包含任何诱导点击或夸大描述。你可以把这里当作一个备忘录性质的入口说明。</p>
+
+      <!-- 提示框 -->
+      <div class="inset-box">
+        <p>💡 如果你已经熟悉界面布局，可以直接通过上方链接前往 <a href="https://m-game-pgsoft.com">PG游戏</a> 主页面。以下部分为功能特点与常见问题摘要。</p>
+      </div>
+    </section>
+
+    <!-- 特点区：卡片形式 -->
+    <section>
+      <h2>页面与功能特点</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <strong>直接访问</strong>
+          <span>无需额外跳转，通过单一链接即可到达主界面，适合日常使用。</span>
+        </div>
+        <div class="feature-item">
+          <strong>基础说明</strong>
+          <span>页面汇总了导航、账户相关等常见说明，减少反复查找。</span>
+        </div>
+        <div class="feature-item">
+          <strong>轻量排版</strong>
+          <span>以文本为主，结构清晰，适合在电脑或手机上浏览。</span>
+        </div>
+        <div class="feature-item">
+          <strong>持续更新</strong>
+          <span>内容根据平台变化做相应调整，保持信息一致性。</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 说明区：使用场景与建议 -->
+    <section>
+      <h2>使用场景与说明</h2>
+      <p>对许多用户来说，获取一个准确、无重定向的链接是优先需求。本页提供的 <a href="https://m-game-pgsoft.com">PG游戏</a> 链接即为平台原始地址，不经过任何中间页。你可以将其添加为书签，或直接通过移动设备浏览器访问。</p>
+      <p>同时，页面中整理的功能特点与 FAQ 摘要可以帮助新用户快速了解基本操作。我们建议所有操作均通过官方公开渠道进行，以保证数据安全与账户正常使用。</p>
+      <p>如果你需要分享给朋友或同事，可以直接推荐本页，方便对方同时查看说明与入口。</p>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+      <h2>常见问题摘要</h2>
+      <div class="faq-block">
+        <div class="faq-item">
+          <div class="faq-q">Q：页面中的链接是否可靠？</div>
+          <div class="faq-a">是的，链接直接指向 <a href="https://m-game-pgsoft.com">PG游戏</a> 的主域名，不经过第三方重定向，可放心使用。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Q：如果页面打不开怎么办？</div>
+          <div class="faq-a">首先检查网络连接是否正常。若域名访问异常，建议稍后重试或联系平台官方客服获取帮助。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Q：为什么需要单独的说明页？</div>
+          <div class="faq-a">将入口与说明整合在一起，可以减少搜索结果中的不准确信息，也方便快速核对最新状态。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <footer class="footer-note">
+      <span>内容参考自公开信息 · 仅供说明</span>
+      <span><a href="https://m-game-pgsoft.com">PG游戏</a></span>
+    </footer>
+  </div>
+</body>
+</html>
